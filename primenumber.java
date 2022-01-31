@@ -1,0 +1,28 @@
+package firstweek;
+import java.util.Scanner;
+
+public class primenumber {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner (System.in);
+		int number = sc.nextInt();
+		boolean temp = false;
+		for(int i =2; i<=number/2 ; ++i)
+		{
+			if(number % i == 0)
+			{
+				temp = true;
+				break;
+			}
+		}
+		if(temp)
+		{
+			System.out.println("not prime number");
+		}
+		else
+		{
+			System.out.println("prime number");
+		}
+		}
+
+}
